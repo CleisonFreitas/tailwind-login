@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gradient-to-br from-slate-100 to-purple-700 h-screen w-screen overflow-x-auto flex flex-col items-center justify-center">
+    <section class="h-5/6 w-5/6 block lg:flex bg-white rounded border-3 border-purple-300">
+        <!-- Card Apresentação-->
+        <div class="hidden w-full bg-gradient-to-r from-slate-100 to-blue-200 rounded-l shadow lg:flex lg:flex-col justify-start items-center">
+            <img class="inline sm:w-72 lg:w-64 lg:mt-24" 
+                src="./img/tailwind-background.png" 
+                alt="tailwind-logo"
+            >
+            <div class="phrase hover:text-purple-900 hover:border-purple-900 mt-10 border-2 p-3 shadow border-gray-300 border-dashed w-3/6 h-32 rounded text-blue-300 italic font-medium text-center text-xl">
+                <p class="hover:underline">Seja bem-vindo ao maior centro formativo de profissionais UI</p>
+            </div>
+        </div>
+        
+        <!-- #Card Apresentação-->
+
+        <!-- Sessão de Login-->
+        <div class="w-full h-full px-5 pt-3 container rounded-r">
+            <div class="header-logo mb-4 px-10">
+                <img src="./img/tailwind-background.png" alt="logo-tailwind" class="sm:w-48 mx-auto">
+            </div>
+            <p class="italic text-lg w-full font-bold text-purple-700 text-center">Sign In</p>
+            <form action="">
+                <div class="mt-2">
+                    <label for="email" class=" ml-2 block font-bold text-slate-500 text-md">Email:</label>
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        class="py-2 px-4 font-medium outline-none rounded-full border-2 boder-slate-700 w-full mt-2"
+                    >
+                </div>
+                <div class="mt-2">
+                    <label for="password" 
+                        class="ml-2 block font-bold text-slate-500 text-md">Senha:</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        class="py-2 px-4 font-medium outline-none rounded-full border-2 boder-slate-700 w-full mt-2"
+                    >
+                </div>
+    
+                <div class="mt-3">
+                    <button type="submit" class="hover:bg-white hover:text-purple-700 bg-purple-300 text-white font-bold italic w-full p-3  rounded-full  border-2 border-purple-300 shadow">Acessar</button>
+                    <p 
+                        class="text-md text-slate-600 italic mt-2 font-bold text-center">
+                        Ainda não possui cadastro? Cadastra-se 
+                        <a href="#" class="text-purple-700 cursor-pointer">
+                            <b>Aqui!</b>
+                        </a>
+                    </p>
+                </div>
+            </form>
+            
+        </div>
+        <!-- #Sessão de Login-->
+    </section>
+</body>
+</html>
